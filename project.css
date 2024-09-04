@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --primary-color: #000e17;
+    --secondary-color: #fdc500;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 0.5579rem + 3.5468vw, 3.75rem);
+}
+
+body {
+    background-color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 18px !important;
+}
+
+.nav-link.active {
+    color: #fdc500 !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.card {
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.btn {
+    color: white !important;
+}
+
+.card img {
+    height: 250px !important;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card .btn {
+    border: 2px solid #fdc500;
+    color: #fdc500 !important;
+}
+
+
+
+
+hr {
+    height: 5px;
+    border: none;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    margin-bottom: 20px;
+
+    & h3 {
+        color: var(--secondary-color) !important;
+    }
+
+    & .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        & i {
+            font-size: 30px;
+            color: #fdc500 !important;
+        }
+
+        & i:hover {
+            font-size: 30px;
+            color: white !important;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.copy-rights {
+    font-size: 12px;
+}
+
+
+@media (max-width: 1400px) {
+    .projects .row .card .btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card img {
+        height: 200px !important;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .projects .row .card .btn {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 769px) {
+    .card img {
+        height: 300px !important;
+    }
+
+    .projects .row .card .btn {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card img {
+        height: 300px !important;
+    }
+
+    .projects .row .card .btn {
+        font-size: 20px;
+    }
+}
